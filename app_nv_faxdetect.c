@@ -327,7 +327,7 @@ static int nv_detectfax_exec(struct ast_channel *chan, const char *data)
 		ast_dsp_free(dsp);
 	
 	//	LOCAL_USER_REMOVE(u);
-	
+	ast_format_cap_destroy(cap);
 	return res;
 }
 
